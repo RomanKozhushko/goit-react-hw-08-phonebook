@@ -1,6 +1,6 @@
 import { useAddContactMutation, useGetContactsQuery } from 'API/contactsAPI';
 // styled components
-import { InputItem } from "./InputForm.styled";
+import { InputItem, FormDecoration } from "./InputForm.styled";
 // other libs
 import { Formik, Form } from 'formik';
 
@@ -17,7 +17,8 @@ export function InputForm () {
     }
     return (
         <Formik initialValues={{ name: "", number: "" }} onSubmit={onSubmit}>
-            <Form><label>Name
+            <Form>
+                <FormDecoration><label>Name
             <InputItem
                 type="text"
                 name="name"
@@ -32,7 +33,8 @@ export function InputForm () {
                 title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
                 required
                 /></label>
-                <button type="submit">Add contact</button>
+                    <button type="submit">Add contact</button>
+                    </FormDecoration>
             </Form>
         </Formik>
     )
