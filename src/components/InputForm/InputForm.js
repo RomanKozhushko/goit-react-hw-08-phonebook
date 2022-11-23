@@ -1,6 +1,6 @@
 import { useAddContactMutation, useGetContactsQuery } from 'API/contactsAPI';
 // styled components
-import { InputItem, Button, Label, FormDecoration } from './InputForm.styled';
+import { InputItem } from './InputForm.styled';
 // other libs
 import { Formik, Form } from 'formik';
 
