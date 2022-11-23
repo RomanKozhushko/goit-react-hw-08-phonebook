@@ -24,3 +24,10 @@ export const FormDecoration = styled.div`
   margin-left: 100px;
   margin-right: 30px;
 `;
+
+export const Label = styled.label`
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+`;
