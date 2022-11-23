@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ContactListBox = styled.ul`
   border: 3px solid steelblue;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 20px;
   border-radius: 10px;
   background-color: white;
