@@ -2,13 +2,17 @@ import styled from 'styled-components';
 import { Field } from 'formik';
 
 export const InputFormBox = styled.div`
-padding: 10px;
-margin: 10px;
-width: 480px;
-border: 1px solid black;
-border-radius: 5px;
-background-color: yellow;
-`
+  display: flex;
+  padding: 20px;
+  margin: 20px;
+  max-width: 1120px;
+  border: 3px solid steelblue;
+  border-radius: 10px;
+  background-color: white;
+  color: steelblue;
+  justify-content: center;
+`;
+
 export const InputItem = styled(Field)`
   flex-direction: column;
   margin-bottom: 10px;
