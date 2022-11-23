@@ -20,3 +20,7 @@ margin-bottom: 10px;
   background-image: linear-gradient(to right, pink, yellow);
 }
 `
+export const FormDecoration = styled.div`
+  margin-left: 100px;
+  margin-right: 30px;
+`;
