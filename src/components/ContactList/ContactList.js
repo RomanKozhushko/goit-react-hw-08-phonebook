@@ -1,4 +1,5 @@
 import { ContactItem } from "../ContactItem/ContactItem";
+import { ContactsList, ContactsListBox } from './ContactList.styled';
 import { useGetContactsQuery } from 'API/contactsAPI';
 import { useSelector } from "react-redux";
 
@@ -8,9 +9,10 @@ export function ContactList() {
   const { value: filter } = useSelector(state => state.filter);
   const normalizedFilter = filter.toLowerCase();
   const filteredContacts = contacts.filter(contact => contact.name.toLowerCase().includes(normalizedFilter)).reverse();
+  
   return (
-    <>
-      <h2>Contact List</h2>
+    <ContactsListBox>
+      <ContactsList>Contact List</ContactsList>
       {filteredContacts.length ?
         <ul style={{margin: 0}}>
           {filteredContacts.map((contact, idx) => (
@@ -18,6 +20,6 @@ export function ContactList() {
           ))}
         </ul>
         : <p>No any contacts</p>}
-    </>
+    </ContactsListBox>
   )
 }
