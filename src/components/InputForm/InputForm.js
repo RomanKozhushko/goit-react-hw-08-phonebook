@@ -1,23 +1,21 @@
 import { useAddContactMutation, useGetContactsQuery } from 'API/contactsAPI';
 // styled components
-import { InputItem } from './InputForm.styled';
+import { InputItem } from "./InputForm.styled";
 // other libs
 import { Formik, Form } from 'formik';
 
-export function InputForm() {
-  const [addContact] = useAddContactMutation();
-  const { data } = useGetContactsQuery();
-  const contacts = data ?? [];
+export function InputForm () {
+    const [addContact] = useAddContactMutation();
+    const { data } = useGetContactsQuery();
+    const contacts = data ?? [];
 
-  const onSubmit = (values, action) => {
-    const equalName = contacts.find(
-      el => el.name.toLowerCase() === values.name.toLowerCase()
-    );
-    if (equalName) return alert(equalName.name + ' is already in contacts');
-    addContact(values);
-    action.resetForm();
-  };
-   return (
+    const onSubmit = (values, action) => {
+        const equalName = contacts.find(el => (el.name.toLowerCase() === values.name.toLowerCase()));
+        if (equalName) return alert(equalName.name + " is already in contacts");
+        addContact(values);
+        action.resetForm();
+    }
+    return (
         <Formik initialValues={{ name: "", number: "" }} onSubmit={onSubmit}>
             <Form><label>Name
             <InputItem
@@ -39,4 +37,3 @@ export function InputForm() {
         </Formik>
     )
 }
-//dfghj
