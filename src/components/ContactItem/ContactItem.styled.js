@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const ContactListBox = styled.ul`
   border: 3px solid steelblue;
+  padding: 20px;
   max-width: 1100px;
   margin: 20px;
   border-radius: 10px;
@@ -13,7 +14,7 @@ export const ListItem = styled.li`
   display: flex;
   list-style: none;
   margin-bottom: 24px;
-  margin-left: 50px;
+  margin-left: 25px;
   background-image: linear-gradient(to left, white, steelblue);
   border-radius: 2px;
 `;
