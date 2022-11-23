@@ -25,7 +25,7 @@ export const ListItem = styled.li`
   display: flex;
   list-style: none;
   margin-bottom: 24px;
-  margin-left: 15px;
+  margin-left: 25px;
   background-image: linear-gradient(to left, white, steelblue);
   border-radius: 2px;
 `;
@@ -35,7 +35,7 @@ export const NumByOrder = styled.span`
   border-radius: 5px;
   background-color: steelblue;
   border: 0;
-  margin-left: -32px;
+  /* margin-left: -32px; */
   color: white;
   font-size: 16px;
   font-weight: 700;
