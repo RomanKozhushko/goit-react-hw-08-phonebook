@@ -13,7 +13,7 @@ export const ListItem = styled.li`
   display: flex;
   list-style: none;
   margin-bottom: 24px;
-  margin-left: 15px;
+  margin-left: 50px;
   background-image: linear-gradient(to left, white, steelblue);
   border-radius: 2px;
 `;
