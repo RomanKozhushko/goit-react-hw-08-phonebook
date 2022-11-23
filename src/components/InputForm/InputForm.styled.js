@@ -42,13 +42,13 @@ export const Label = styled.label`
 `;
 
 
-export const Button = styled.button`
-  width: 366px;
-  font-size: 16px;
-  height: 30px;
-  font-weight: bold;
-  color: white;
-  background-color: steelblue;
-  border: 0;
-  border-radius: 3px;
-`;
+// export const Button = styled.button`
+//   width: 366px;
+//   font-size: 16px;
+//   height: 30px;
+//   font-weight: bold;
+//   color: white;
+//   background-color: steelblue;
+//   border: 0;
+//   border-radius: 3px;
+// `;
