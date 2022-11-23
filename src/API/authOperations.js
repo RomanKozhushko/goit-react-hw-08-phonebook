@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { addUser, toggleLogin, changeLoading, changeError } from 'Redux/authSlice';
-import { setFilter } from 'Redux/filterSlice';
+import { addUser, toggleLogin, changeLoading, changeError } from 'redux/authSlice';
+import { setFilter } from 'redux/filterSlice';
 
 const baseUrl = 'https://connections-api.herokuapp.com/users/';
 const token = {

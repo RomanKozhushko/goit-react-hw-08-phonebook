@@ -1,23 +1,16 @@
-import PropTypes from 'prop-types';
-// import { useDispatch, useSelector } from 'react-redux';
-// import { changeFilter } from '../../redux/contactsSlice';
-import { FindContactsBox, FindInput, FindContacts } from './Filter.styled';
+import { useSelector, useDispatch } from 'react-redux';
+import { setFilter } from  'redux/filterSlice';
 
-export const Filter = ({filter, setFilter}) => {
-
+export const Filter = () => {
+  const dispatch = useDispatch();
+  const { value: filter } = useSelector(state => state.filter);
   return (
-    <FindContactsBox>
-      <FindContacts>Find contacts by name</FindContacts>
-      <FindInput
+    <div>
+      <h3>Find contacts by name</h3>
+      <input
         type="text"
         value={filter}
-        onChange={evt => setFilter(evt.currentTarget.value)}
-      />
-    </FindContactsBox>
-  );
-};
-
-Filter.propTypes = {
-  filter: PropTypes.string,
-  setFilter: PropTypes.func
+        onChange={evt => dispatch(setFilter(evt.currentTarget.value))} />
+    </div>
+  )
 }

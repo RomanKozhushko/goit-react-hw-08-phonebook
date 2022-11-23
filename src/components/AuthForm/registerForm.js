@@ -2,7 +2,7 @@ import { Formik } from "formik";
 import { Input, FormBox } from "components/AuthForm/authForm.styled";
 import { Home } from "components/Greetings/greetings.styled";
 import { useSelector, useDispatch } from "react-redux";
-import { changeLoading, changeError } from "Redux/authSlice";
+import { changeLoading, changeError } from "redux/authSlice";
 import { register } from "API/authOperations";
 import { Error } from "components/ErrorMessage/errormessage";
 import { useEffect } from "react";

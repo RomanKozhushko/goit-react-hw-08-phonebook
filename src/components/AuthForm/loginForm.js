@@ -3,7 +3,7 @@ import { Input, FormBox } from "components/AuthForm/authForm.styled";
 import { Home } from "components/Greetings/greetings.styled";
 import { useDispatch, useSelector } from 'react-redux';
 import { login } from "API/authOperations";
-import { changeLoading, changeError } from "Redux/authSlice";
+import { changeLoading, changeError } from "redux/authSlice";
 import { useNavigate } from "react-router";
 import { useEffect } from "react";
 import { Error } from "components/ErrorMessage/errormessage";

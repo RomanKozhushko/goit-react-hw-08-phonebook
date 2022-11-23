@@ -1,41 +1,25 @@
-// import { useSelector } from 'react-redux';
-import { useState } from 'react';
-// Компоненти додатку
-import { InputForm } from './InputForm/InputForm';
-import { Filter } from './Filter/Filter';
-import { ContactList } from './ContactList/ContactList';
+import { Routes, Route } from "react-router-dom";
+import { NavBar } from "./NavBar/navBar";
+import { Greetings } from "./Greetings/greetings";
+import { RegisterForm } from "./AuthForm/registerForm";
+import { PageNotFound } from "./PageNotFound/pageNotFound";
+import { PrivateRoute } from "./privateRoute";
+// import { RedirectRoute } from "./redirectRoute";
+import { LoginForm } from "./AuthForm/loginForm";
+import { Phonebook } from "./Phonebook/Phonebook";
+import { RedirectRoute } from "./redirectRoute";
 
-// Оформлення
-import { InputFormBox } from './InputForm/InputForm.styled';
-import { ContactListBox } from './ContactList/ContactList.styled';
-import { Head, PhonebookBox } from './App.styled';
-
-// API
-import { useGetContactsQuery } from './ContactsAPI/contactsAPI';
-
-export function App() {
-  const { data } = useGetContactsQuery();
-  const contacts = data ?? [];
-  const [myFilter, setMyFilter] = useState('');
-
-  // const contacts = useSelector(store => store.contacts.items);
-  // const myFilter = useSelector(store => store.contacts.filter);
-
-  const normalizedFilter = myFilter.toLowerCase();
-  const filteredContacts = contacts.filter(contact =>
-    contact.name.toLowerCase().includes(normalizedFilter)
-  );
+export const App = () => {
 
   return (
-    <PhonebookBox>
-      <InputFormBox>
-        <Head>Phonebook</Head>
-        <InputForm contacts={contacts}/>
-      </InputFormBox>
-      <ContactListBox>
-        <Filter filter={myFilter} setFilter={setMyFilter}/>
-        <ContactList contacts={filteredContacts.reverse()} />
-      </ContactListBox>
-    </PhonebookBox>
-  );
+    <Routes>
+      <Route path="/" element={<NavBar />} >;
+        <Route index element={<Greetings />} />;
+        <Route path="register" element={<RegisterForm />} />;
+        <Route path="login" element={<RedirectRoute><LoginForm /></RedirectRoute>} />;
+        <Route path="phonebook" element={<PrivateRoute><Phonebook/></PrivateRoute>} />;
+      </Route>
+      <Route path="*" element={<PageNotFound/>} />;
+    </Routes>
+  )
 }
