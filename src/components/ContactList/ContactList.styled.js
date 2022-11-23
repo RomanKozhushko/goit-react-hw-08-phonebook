@@ -30,7 +30,7 @@ export const ListItem = styled.li`
   border-radius: 2px;
 `;
 export const NumByOrder = styled.span`
-  margin-right: 10px;
+  margin-right: 20px;
   width: 10px;
   border-radius: 5px;
   background-color: steelblue;
