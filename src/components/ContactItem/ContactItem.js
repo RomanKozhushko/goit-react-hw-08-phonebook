@@ -1,4 +1,10 @@
-import { ListItem, NumByOrder, TelName, TelNum, DelBtn } from "./ContactItem.styled";
+import {
+  ListItem,
+  NumByOrder,
+  TelNum,
+  TelName,
+  DelBtn,
+} from '../ContactList/ContactList.styled';
 import PropTypes from 'prop-types';
 import { useDeleteContactMutation } from "API/contactsAPI";
 

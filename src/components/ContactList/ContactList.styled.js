@@ -25,12 +25,12 @@ export const ListItem = styled.li`
   display: flex;
   list-style: none;
   margin-bottom: 24px;
-  margin-left:45px;
+  margin-left: 15px;
   background-image: linear-gradient(to left, white, steelblue);
   border-radius: 2px;
 `;
 export const NumByOrder = styled.span`
-  margin-right: 20px;
+  margin-right: 10px;
   width: 10px;
   border-radius: 5px;
   background-color: steelblue;
