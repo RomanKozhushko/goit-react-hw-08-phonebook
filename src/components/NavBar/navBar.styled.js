@@ -18,6 +18,7 @@ border: 4px solid white;
 border-radius: 5px;
 color: white;
 :hover {
+    color: steelblue;
     background-color: white;
     cursor: pointer;
 }
