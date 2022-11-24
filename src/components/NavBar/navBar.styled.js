@@ -16,6 +16,7 @@ scale: 1.2;
 text-decoration: none;
 border: 4px solid white;
 border-radius: 5px;
+color: white;
 :hover {
     background-color: white;
     cursor: pointer;
