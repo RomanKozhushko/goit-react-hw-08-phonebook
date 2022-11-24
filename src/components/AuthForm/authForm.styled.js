@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import { Form, Field } from 'formik';
 
 export const FormBox = styled(Form)`
-  margin: 10px auto;
-  padding: 20px;
-  width: 240px;
+  margin: 40px auto;
+  padding: 40px;
+  width: 440px;
   background-color: steelblue;
   border-radius: 5px;
 
