@@ -1,4 +1,4 @@
-import { UserEmail } from "./userMenu.styled";
+import { UserEmail, Button } from "./userMenu.styled";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "API/authOperations";
 
@@ -9,7 +9,7 @@ export const UserMenu = () => {
     return (
         <>
             <UserEmail>{user.name}</UserEmail>
-            <button type="button" onClick={() => dispatch(logout())}>LogOut</button>
+            <Button type="button" onClick={() => dispatch(logout())}>LogOut</Button>
         </>
     )
 }

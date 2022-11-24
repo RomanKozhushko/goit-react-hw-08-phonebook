@@ -10,3 +10,14 @@ font-weight: bold;
 color: white;
 
 `
+export const Button = styled.button`
+ margin-left: auto;
+  margin-right: 20px;
+  padding: 5px 20px 4px 20px;
+  border: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  background-color: steelblue;
+  border-radius: 3px;
+  `
