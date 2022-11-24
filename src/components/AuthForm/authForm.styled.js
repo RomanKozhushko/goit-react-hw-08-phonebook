@@ -5,7 +5,7 @@ export const FormBox = styled(Form)`
   margin: 10px auto;
   padding: 20px;
   width: 240px;
-  background-color: pink;
+  background-color: steelblue;
   border-radius: 5px;
 
   animation-name: opacity2;

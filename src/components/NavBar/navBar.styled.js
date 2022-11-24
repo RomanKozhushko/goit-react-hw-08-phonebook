@@ -7,14 +7,14 @@ margin: 10px auto;
 padding: 10px;
 display: flex;
 justify-content: center;
-background-color: yellow;
+background-color: steelblue;
 `
 export const Button = styled(NavLink)`
 margin-right: 25px; 
 padding: 5px 10px;
 scale: 1.2;
 text-decoration: none;
-border: 1px solid red;
+border: 2px solid white;
 border-radius: 5px;
 :hover {
     background-color: pink;
