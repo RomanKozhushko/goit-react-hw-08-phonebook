@@ -11,7 +11,7 @@ height: 800px;
 ` 
 export const Head1 = styled.h1`
 padding-top:  60px;
-color: blue;
+color:  steelblue;
 `
 
 export const Head2 = styled.h2`
