@@ -11,10 +11,10 @@ background-color: steelblue;
 `
 export const Button = styled(NavLink)`
 margin-right: 25px; 
-padding: 5px 10px;
+padding: 10px 30px;
 scale: 1.2;
 text-decoration: none;
-border: 2px solid white;
+border: 4px solid white;
 border-radius: 5px;
 :hover {
     background-color: white;

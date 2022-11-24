@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import image from 'img/a_cap_of_coffee.webp';
+import image from 'img/a_cap_of_coffee.jpeg';
 
 export const Home = styled.div`
 padding: 20px;
