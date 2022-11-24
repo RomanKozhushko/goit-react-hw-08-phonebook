@@ -1,5 +1,5 @@
 import { Formik } from "formik";
-import { Input, FormBox } from "components/AuthForm/authForm.styled";
+import { Input, FormBox, Button } from "components/AuthForm/authForm.styled";
 import { Home } from "components/Greetings/greetings.styled";
 import { useDispatch, useSelector } from 'react-redux';
 import { login } from "API/authOperations";
@@ -39,7 +39,7 @@ export const LoginForm = () => {
         <label>Password:
           <Input type="password" name="password" required/>
         </label>
-        <button type="submit">Submit</button>
+        <Button type="submit">Submit</Button>
         </FormBox>
       </Formik>
       {isLoading && <h2>Is Loading ...</h2>}

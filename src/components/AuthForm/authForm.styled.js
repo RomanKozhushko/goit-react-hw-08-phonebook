@@ -18,6 +18,22 @@ export const FormBox = styled(Form)`
 
 `
 export const Input = styled(Field)`
-  display: flex;
-  justify-content: space-between;
+ background-image: linear-gradient(to right, white, steelblue);
+  border: 0;
+  font-size: 22px;
+  font-weight: 600;
+  max-width: 282px;
+  color: steelblue;
+  margin-right: auto;
+  margin-left: 46px;;
 `
+export const Button = styled.button`
+width: 366px;
+  font-size: 16px;
+  height: 30px;
+  font-weight: bold;
+  color: white;
+  background-color: steelblue;
+  border: 0;
+  border-radius: 3px;
+  `
