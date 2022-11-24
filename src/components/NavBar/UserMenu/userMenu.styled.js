@@ -7,5 +7,6 @@ margin-right: 20px;
 margin-left: auto;
 font-size: 20px;
 font-weight: bold;
+color: white;
 
 `
