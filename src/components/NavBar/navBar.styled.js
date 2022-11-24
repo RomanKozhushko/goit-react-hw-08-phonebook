@@ -17,7 +17,7 @@ text-decoration: none;
 border: 2px solid white;
 border-radius: 5px;
 :hover {
-    background-color: pink;
+    background-color: white;
     cursor: pointer;
 }
 `
