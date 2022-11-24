@@ -16,5 +16,5 @@ color:  steelblue;
 
 export const Head2 = styled.h2`
 color: yellow;
-margin: 0px;
+
 `
