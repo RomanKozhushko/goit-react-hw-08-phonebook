@@ -1,10 +1,10 @@
-import {Home} from './greetings.styled'
+import {Home, Head1, Head2} from './greetings.styled'
 
 export const Greetings = () => {
     return (
         <Home>
-            <h1>Hello, my dear</h1>
-            <h2>Let's <u>get or put</u> some records...</h2>
+            <Head1>Hello, my dear</Head1>
+            <Head2><u>Let's get or put some records...</u></Head2>
         </Home>
     )
 }

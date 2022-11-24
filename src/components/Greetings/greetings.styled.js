@@ -9,3 +9,11 @@ background-repeat: no-repeat;
 background-position: center;
 height: 800px;
 ` 
+export const Head1 = styled.h1`
+color: blue;
+`
+
+export const Head2 = styled.h2`
+color: yellow;
+
+`
