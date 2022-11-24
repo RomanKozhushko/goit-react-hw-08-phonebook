@@ -10,7 +10,7 @@ background-position: center;
 height: 800px;
 ` 
 export const Head1 = styled.h1`
-padding-top:  60px;
+padding-top:  80px;
 color:  steelblue;
 `
 
