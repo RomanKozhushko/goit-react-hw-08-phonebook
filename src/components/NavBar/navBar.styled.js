@@ -11,7 +11,7 @@ background-color: steelblue;
 `
 export const Button = styled(NavLink)`
 margin-right: 25px; 
-padding: 10px 30px;
+padding: 10px 50px;
 scale: 1.2;
 text-decoration: none;
 border: 4px solid white;
